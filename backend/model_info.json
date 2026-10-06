@@ -1,0 +1,58 @@
+{
+  "model_name": "Random Forest Tuned",
+  "api_version": "v10",
+  "trained_on": "2026-10-06",
+  "target": "Product_Store_Sales_Total",
+  "features": [
+    "Product_Weight",
+    "Product_Sugar_Content",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Store_Age_Years",
+    "Product_Type_Category"
+  ],
+  "categorical_values": {
+    "Product_Sugar_Content": [
+      "Low Sugar",
+      "No Sugar",
+      "Regular"
+    ],
+    "Store_Size": [
+      "High",
+      "Medium",
+      "Small"
+    ],
+    "Store_Location_City_Type": [
+      "Tier 1",
+      "Tier 2",
+      "Tier 3"
+    ],
+    "Store_Type": [
+      "Departmental Store",
+      "Food Mart",
+      "Supermarket Type1",
+      "Supermarket Type2"
+    ],
+    "Product_Id_char": [
+      "DR",
+      "FD",
+      "NC"
+    ],
+    "Product_Type_Category": [
+      "Non Perishables",
+      "Perishables"
+    ]
+  },
+  "train_rows": 6134,
+  "test_metrics": {
+    "rmse": 290.79,
+    "mae": 114.63,
+    "r2": 0.9261,
+    "mape": 0.0515,
+    "within_10_pct": 93.2
+  }
+}
